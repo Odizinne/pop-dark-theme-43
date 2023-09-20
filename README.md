@@ -13,3 +13,9 @@ This is my first experience with CSS, and this theme was created for my personal
 ## How to install
 
 Clone this repository and place the "Pop-dark-43" folder in your .themes directory.
+
+## To do
+
+- Light theme
+- More polish here and there
+- Fix bugs (you tell me)
