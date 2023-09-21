@@ -2743,3 +2743,25 @@ background-color: #464342;
 .osd-window {
   margin-bottom: 4em;
 }
+
+.modal-dialog .modal-dialog-linked-button:focus {
+  color: #ffffff;
+  text-shadow: 0 1px rgba(0, 0, 0, 0.2);
+  icon-shadow: 0 1px rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0 0 0 2px rgba(251,184,108,255) !important;
+}
+
+.quick-toggle-menu {
+  background-color: #33302f !important;
+  color: #dddddd !important;
+  border-radius: 5px !important;
+  padding: 12px 0 !important;
+  margin: 12px 18px 0 21px !important;
+}
+
+.quick-toggle-menu .header {
+  spacing-rows: 3px;
+  spacing-columns: 12px;
+  padding: 0 12px 12px !important;
+}
+
