@@ -4,7 +4,7 @@
 
 [[_TOC_]]
 
-## Why is this for?
+## Why is it?
 
 This is a "port" of the Pop-os dark gnome-shell theme for gnome 43+.
 
