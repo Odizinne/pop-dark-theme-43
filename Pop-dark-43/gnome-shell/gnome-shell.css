@@ -2638,7 +2638,7 @@ StScrollBar {
   border-radius: 4px;
   min-width: 12em;
   max-width: 12em;
-  min-height: 40px;
+  min-height: 44px;
   border: none; }
 
 .quick-toggle {
