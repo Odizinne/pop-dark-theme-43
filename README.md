@@ -19,3 +19,5 @@ Clone this repository and place the "Pop-dark-43" folder in your .themes directo
 - Light theme
 - More polish here and there
 - Fix bugs (you tell me)
+- Logout dialog
+- OSD rework
