@@ -25,7 +25,7 @@ stage {
 /* Common Stylings */
 .screenshot-ui-panel, .workspace-switcher, .switcher-list, .resize-popup, .osd-window {
   color: #F6F6F6;
-  background-color: rgba(44, 44, 44, 0.7);
+  background-color: rgba(44, 44, 44, 255);
   border: 1px solid rgba(255, 255, 255, 0.16);
   border-radius: 5px;
   padding: 12px; }
