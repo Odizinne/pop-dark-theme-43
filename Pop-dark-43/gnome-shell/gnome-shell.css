@@ -2759,6 +2759,11 @@ background-color: #464342;
   margin: 12px 18px 0 21px !important;
 }
 
+.quick-toggle-menu .header .icon.active {
+  background-color: #5c5959 !important;
+  color: #ffffff;
+}
+
 .quick-toggle-menu .header {
   spacing-rows: 3px;
   spacing-columns: 12px;
