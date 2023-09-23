@@ -40,6 +40,8 @@ In gnome-tweaks, select adw-gtk3 theme for legacy applications. This way non GTK
 
 ### Fix GTK3 window decorations
 
+You need pop-gtk theme installed for this to work.
+
 For some reasons that I don't know, Pop-dark gradience preset does not seems to work with gtk3 applications (it defaults to GTK4 window decorations)
 
 If you're still using GTK3 apps, you can fix it by editing your application desktop file.
