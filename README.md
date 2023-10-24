@@ -341,16 +341,27 @@ popover contents {
  *******************/
 
 decoration {
-	border-radius: 4px 4px 0 0;
+	border-radius: 5px 5px 0 0;
+}
+
+window separator:first-child + headerbar:backdrop, window separator:first-child + headerbar, window headerbar:first-child:backdrop, window headerbar:first-child {
+	border-top-left-radius: 5px;
+}
+
+window headerbar:last-child:backdrop, window headerbar:last-child {
+	border-top-right-radius: 5px;
+}
+
+window stack headerbar:first-child:backdrop, window stack headerbar:first-child, window stack headerbar:last-child:backdrop, window stack headerbar:last-child {
+	border-top-left-radius: 5px; border-top-right-radius: 5px;
 }
 
 .background .titlebar:backdrop, .background .titlebar {
-	border-top-left-radius: 4px; border-top-right-radius: 4px;
+	border-top-left-radius: 5px; border-top-right-radius: 5px; 
 }
 
-
 .csd menu, .csd .menu, .csd .context-menu {
-	border-radius: 4px;
+	border-radius: 5px;
 }
 </code></pre>
 
