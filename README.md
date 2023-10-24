@@ -40,27 +40,7 @@ In gnome-tweaks, select adw-gtk3 theme for legacy applications. This way non GTK
 
 ### Fix GTK3 window decorations
 
-#### The clean way
-You need pop-gtk theme installed for this to work.
-
-For some reasons that I don't know, Pop-dark gradience preset does not seems to work with gtk3 applications (it defaults to GTK4 window decorations)
-
-If you're still using GTK3 apps, you can fix it by editing your application desktop file.
-
-Copy it from `/usr/share/applications` to `/home/$USER/.local/share/applications`
-
-Now you can edit the `exec=` line and add `env GTK_THEME=Pop-dark` before the executable.
-
-```
-Exec=env GTK_THEME=Pop-dark /usr/lib/firefox/firefox %u
-Icon=firefox
-```
-
-This way your apps will use Pop-dark GTK3 theme.
-
-#### The almost clean way
-
-Open gradience and select the Pop-preset.
+Open gradience and select the Pop-dark preset.
 
 Go to the advanced tab and paste the following GTK3 CSS.
 
@@ -69,7 +49,6 @@ Go to the advanced tab and paste the following GTK3 CSS.
 <summary>Expand/hide</summary>
 
 <pre><code>
-
 /*****************
  *WINDOW CONTROLS*
  *****************/
@@ -356,14 +335,27 @@ popover contents {
 	border-width: 1px;
 	border-color: @shade_color;
 }
+
+/*******************
+ *WINDOW DECORATION*
+ *******************/
+
+decoration {
+	border-radius: 4px 4px 0 0;
+}
+
+.background .titlebar:backdrop, .background .titlebar {
+	border-top-left-radius: 4px; border-top-right-radius: 4px;
+}
+
+
+.csd menu, .csd .menu, .csd .context-menu {
+	border-radius: 4px;
+}
 </code></pre>
 
 </details>
 </p>
-
-Unfortunately GTK3 apps will still have the default adw-gtk3 rounded corners.
-
-The rounded-window-corner extension does not seems to work great with adw-gtk3, so let me know if a fix for this exist, and i'll add it here.
 
 Credits: halfmexican for the original GTK4 css
 
